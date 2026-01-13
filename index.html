@@ -1,183 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Car Parking Multiplayer – Mod Experience</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore an enhanced Car Parking Multiplayer mod-style experience with custom gameplay features and sandbox-style options.">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #ffffff;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      color: #d0d0d0;
-      max-width: 700px;
-      margin: auto;
-    }
-
-    .hero {
-      background: rgba(0, 0, 0, 0.35);
-      border-radius: 14px;
-      padding: 50px 30px;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    }
-
-    .hero h2 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 1.05rem;
-      line-height: 1.6;
-      color: #e0e0e0;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-      margin-top: 60px;
-    }
-
-    .feature-card {
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 12px;
-      padding: 25px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
-    }
-
-    .feature-card h3 {
-      margin-top: 0;
-      margin-bottom: 10px;
-      font-size: 1.2rem;
-    }
-
-    .feature-card p {
-      font-size: 0.95rem;
-      color: #cccccc;
-      line-height: 1.5;
-    }
-
-    .cta {
-      margin-top: 70px;
-      text-align: center;
-    }
-
-    .cta a {
-      display: inline-block;
-      padding: 18px 45px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      color: #000000;
-      background: #ffd100;
-      border-radius: 50px;
-      text-decoration: none;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      box-shadow: 0 8px 25px rgba(255, 209, 0, 0.4);
-    }
-
-    .cta a:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 35px rgba(255, 209, 0, 0.6);
-    }
-
-    .disclaimer {
-      margin-top: 80px;
-      font-size: 0.85rem;
-      color: #b5b5b5;
-      line-height: 1.5;
-      background: rgba(0, 0, 0, 0.3);
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 0.8rem;
-      color: #999999;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Parking Multiplayer – Mod Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+            color: #f3f4f6;
+        }
+        .heading-font {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .asphalt-pattern {
+            background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        .yellow-glow {
+            box-shadow: 0 0 15px rgba(250, 204, 21, 0.4);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
 </head>
-<body>
-
-  <div class="container">
-
-    <header>
-      <h1>Car Parking Multiplayer – Mod Experience</h1>
-      <p>Discover a custom, sandbox-style driving experience inspired by Car Parking Multiplayer, designed for exploration and creative gameplay.</p>
-    </header>
-
-    <section class="hero">
-      <h2>Customize Your Driving Experience</h2>
-      <p>
-        This landing page showcases an enhanced gameplay concept focused on vehicle customization,
-        open exploration, and practice-based driving features. The experience is presented in a
-        transparent and educational manner, highlighting creative ways players enjoy sandbox-style
-        environments.
-      </p>
-    </section>
-
-    <section class="features">
-      <div class="feature-card">
-        <h3>Sandbox Gameplay</h3>
-        <p>Explore open driving areas designed for experimentation, practice, and creative vehicle interaction.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Vehicle Customization</h3>
-        <p>Showcase visual and configuration options that demonstrate how players personalize their driving experience.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Offline Practice Mode</h3>
-        <p>Learn driving mechanics and controls in a relaxed environment focused on skill development.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Enhanced Simulation Feel</h3>
-        <p>A presentation inspired by simulation-style gameplay, focusing on immersion and user creativity.</p>
-      </div>
-    </section>
-
-    <div class="cta">
-      <a href="https://attorneycambridge.com/cl/i/4o2dvj">Download Now</a>
-    </div>
-
-    <div class="disclaimer">
-      <strong>Disclaimer:</strong><br>
-      This website is for informational and entertainment purposes only. It does not claim to provide
-      official game files, guaranteed advantages, or unauthorized access to protected systems.
-      All trademarks, names, and references belong to their respective owners.
-    </div>
-
-    <footer>
-      © 2026 – Informational Landing Page
-    </footer>
-
-  </div>
-
+<body class="asphalt-pattern overflow-x-hidden">
+    <div id="root"></div>
 </body>
 </html>
